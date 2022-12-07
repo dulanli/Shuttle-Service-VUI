@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f1ffff;
+}
+
+header {
+    height: 70px;
+    font-family: "Lucida Console", Monospace;
+    background: #f1ffff;
+    color: #03283B;
+    text-align: center;
+    width: 100%;
+    line-height: 70px;
+    font-size: 35px;
+    box-shadow: 8px 0 5px #afadad;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #f1ffff;
+    box-shadow: 0 0 2px #afadad;
+}
+
+.typing-container {
+    border: none;
+    justify-content: center;
+    display: flex;
+}
+
+#input-text {
+    width: 100%;
+    border: 2px solid #757586;
+    border-radius: 3px;
+    font-size: 17px;
+    height: 25px;
+    color: black;
+    padding: 7px;
+    background: none;
+}
+
+#mic {
+    justify-content: center;
+    display: flex;
+    margin: 3px 50%;
+    background: #ff3b3b;
+    padding: 17px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #666;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    width: 110%;
+}
+
+#mic:hover{
+    opacity: 75%;
+}
+
+.container {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 40px 0;
+}
+
+
+.student-container {
+    margin: 0px 170px;
+    width: 20%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.shuttle-container {
+    margin: 0px -20px;
+    width: 22%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 85px;
+}
+
+.student-container img, .shuttle-container img {
+    width: 100%;
+}
+
+.chat-container {
+    font-family: "Arial", sans-serif;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.chat-container-text {
+    width: 100%;
+}
+
+.chat-container-text img{
+    width: 100%;
+    height: auto;
+}
+
+.chat-container-text a{
+    color: #fff;
+}
+
+.convo-container {
+    border-radius: 5px;
+    float: left;
+    width: 60%;
+    padding: 15px;
+    color: #fff;
+    position: relative;
+    margin: 5px 0;
+}
+
+.convo-container.student{
+    background: #8722e6;
+    text-align: left;
+}
+
+.convo-container.student:before {
+    content: '';
+    position: absolute;
+    border-right: 15px solid #8722e6;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    bottom: 0;
+    left: -10px;
+}
+
+.convo-container.shuttle{
+    background: #5885d8;
+    float: right;
+    text-align: right;
+}
+
+.convo-container.shuttle:before {
+    content: '';
+    position: absolute;
+    border-left: 15px solid #5885d8;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    bottom: 0;
+    right: -10px;
+}
+
+
